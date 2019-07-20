@@ -23,7 +23,7 @@
 
 ### 3、JWT使用方式
  通常推荐的做法是客户端在 HTTP 请求的头信息Authorization字段里面。
->Authorization: Bearer <token>
+>Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6iZEIj3fQ.uEJSJagJf1j7A55Wwr1bGsB5YQoAyz5rbFtF
 
 ## 二、与SpringBoot2整合
 
