@@ -1,4 +1,4 @@
-# SpringBoot2整合JWT解决Token跨域验证问题
+# SpringBoot2整合JWT实现简单的Token跨域验证问题
 
 ## 一、JWT简介
 
