@@ -52,8 +52,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class JsonWebTokenConfig {
 
-    public static final String TOKEN_HEADER = "Authorization";
-    public static final String TOKEN_PREFIX = "Bearer ";
+	public static final String TOKEN_HEADER = "Authorization";
+	public static final String TOKEN_PREFIX = "Bearer ";
 	public static long EXPIRES_SECOND=5*60;
 	
 	private static String secret="iwqjhda8232bjgh432";
@@ -174,7 +174,7 @@ public class WebServiceConfig  implements WebMvcConfigurer{
 	
 	public void addInterceptors(InterceptorRegistry registry) {
 		 registry.addInterceptor(tokenInterceptor).addPathPatterns("/**");
-		 }
+	}
 }
 
 ```
@@ -289,4 +289,6 @@ public class UserController extends BaseController {
 ```
 
 ### 2、验证
-> curl -X GET -H 'Content-Type: application/json' -H 'Authorization: Bearer ${access_token}' http://127.0.0.1:8090/user/info
+```
+  curl -X GET -H 'Content-Type: application/json' -H 'Authorization: Bearer ${access_token}' http://127.0.0.1:8090/user/info
+```
